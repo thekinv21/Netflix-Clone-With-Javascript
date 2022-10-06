@@ -1,4 +1,6 @@
-# Netflix-Clone-With-Javascript using Javascript And Css
+# Netflix-Clone
+# Javascript and Css
+# Home , Footer , Header , Navbar , vb Componentler oluşturuldu
 # Film Arama Motorunu daha yapmadım
 # Giriş ve Kayıt sayfaları oluşturuldu
 # Username ve Password Data veriden Çekildi
