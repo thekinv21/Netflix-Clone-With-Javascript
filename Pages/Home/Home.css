@@ -1,0 +1,323 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Netflix Sans", sans-serif;
+  background-color: #111;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: #111;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+}
+
+/*?------------Netflix Navbar---------*/
+
+.navbar {
+  position: fixed;
+  top: 0;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1;
+  transition: all 0.5s;
+  transition-timing-function: ease-in;
+  width: 100%;
+}
+
+.active {
+  background-color: #111;
+}
+
+.left {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.left .logo {
+  height: 35px;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+.left .navbar-link {
+  cursor: pointer;
+  color: #e5e5e5;
+  text-decoration: none;
+  padding: 0px 10px;
+  font-size: 14px;
+}
+
+.left .navbar-link:hover {
+  opacity: 0.6;
+}
+
+.right {
+  position: fixed;
+  width: 15%;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  color: #fff;
+}
+
+.right .user {
+  height: 35px;
+  border-radius: 5px;
+  margin: 0px 15px;
+  cursor: pointer;
+}
+
+.right .fa-bell,
+.fa-search {
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0px 30px;
+}
+
+.search-box {
+  margin-left: 10px;
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.input-search {
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  background-color: transparent;
+  padding-right: 40px;
+  color: #fff;
+}
+.input-search::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+}
+.btn-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: #ffffff;
+  background-color: transparent;
+}
+.btn-search:focus ~ .input-search {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+.input-search:focus {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+.right .profile .options {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    width: 100%;
+    padding: 30px 20px;
+  }
+  .navbar .left {
+    position: fixed;
+    float: left;
+    width: 50%;
+  }
+
+  .navbar .left .logo {
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .navbar .left .navbar-link {
+    cursor: pointer;
+    font-size: 8px;
+    padding: 0px 3px;
+  }
+
+  .navbar .right {
+    position: fixed;
+    float: right;
+    right: 20px;
+  }
+}
+
+@media (max-width: 565px) {
+  .navbar {
+    position: fixed;
+    width: 100%;
+    padding: 30px 20px;
+  }
+  .navbar .left .logo {
+    height: 20px;
+    margin-right: 5px;
+  }
+
+  .navbar .left .navbar-link {
+    cursor: pointer;
+    font-size: 8px;
+    padding: 0px 1px;
+  }
+}
+
+/*?------------Netflix Banner---------*/
+
+.banner {
+  color: #fff;
+  object-fit: contain;
+  height: 844px;
+  background-size: cover;
+  background-position: center center;
+}
+
+.banner-container {
+  background-color: rgb(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+}
+
+.banner-contenst {
+  margin-left: 70px;
+  padding-top: 540px;
+  height: 190px;
+}
+
+.banner-title {
+  font-size: 3rem;
+  font-weight: 800;
+  padding-bottom: 0.3rem;
+}
+
+.banner_description {
+  width: 45rem;
+  height: 80px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  max-width: 360px;
+  padding-top: 1rem;
+  overflow: hidden;
+}
+
+.banner-fadeBottom {
+  height: 7.4rem;
+  background: linear-gradient(180deg, transparent, rgb(37, 37, 37, 0.61), #111);
+}
+
+.info_button {
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1rem 1rem 1rem 0rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border-radius: 0.2vw;
+  background-color: rgb(51, 51, 51, 0.5);
+  cursor: pointer;
+}
+
+.play_button {
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 1rem 1rem 1rem 0rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  border-radius: 0.2vw;
+  background-color: white;
+  cursor: pointer;
+}
+
+.info_button i,
+.play_button i {
+  padding-right: 5px;
+}
+
+.info_button:hover,
+.play_button:hover {
+  background-color: #e6e6e6;
+  transition: all 0.3s;
+  color: #000;
+}
+
+/*?--------------Row--------------*/
+
+.row {
+  margin-left: 20px;
+  color: #fff;
+}
+
+.row-title {
+  padding-top: 30px;
+  margin-left: 20px;
+}
+
+.row-poster {
+  width: 100%;
+  object-fit: contain;
+  max-height: 120px;
+  margin-right: 10px;
+  transition: transform 500ms;
+}
+
+.row-posters::-webkit-scrollbar {
+  display: none;
+}
+
+.row-posters {
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  padding: 20px;
+}
+
+.row-posterLarge,
+.row-posterLarge1,
+.row-posterLarge2 {
+  object-fit: contain;
+  width: 100%;
+  max-height: 270px;
+  margin-right: 20px;
+  transition: transform 500ms;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.row-posterLarge:hover,
+.row-posterLarge1:hover,
+.row-posterLarge2:hover {
+  transform: scale(1.19);
+  opacity: 1;
+}

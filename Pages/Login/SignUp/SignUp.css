@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #000;
+  color: white;
+}
+
+/*?------------------------Card-1---------------------------*/
+
+/**---------------Header start------------------*/
+
+.netflix-container .netflix-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 55px;
+  z-index: 1000;
+}
+
+.netflix-container .netflix-header .logo-container {
+  height: 37px;
+  fill: #e01414;
+  width: 134px;
+}
+
+.netflix-container .netflix-header .logo-container .logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.netflix-container .netflix-header .language-login .language {
+  background-color: transparent;
+  outline: none;
+  color: white;
+  padding: 6px 17px;
+  border-radius: 3px;
+  margin-right: 30px;
+}
+.netflix-container .netflix-header .language-login .language option {
+  background-color: gray;
+}
+
+.netflix-container .netflix-header .language-login .login {
+  padding: 7px 17px;
+  color: #fff;
+  text-decoration: none;
+  background: #e01414;
+  border-radius: 3px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+/*!--------------------Section Banner Start---------------------*/
+
+.banner {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  z-index: 1;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.banner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
+  z-index: 1;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+}
+
+.our-story-card-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.our-story-card-text {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.our-story-card-text .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.our-story-card-text .heading h1 {
+  font-size: 3.125rem;
+  letter-spacing: 2px;
+  width: 80%;
+}
+
+.our-story-card-text .heading .para-1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 1rem 0;
+}
+
+.our-story-card-text .heading .para-2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.our-story-card-text .heading .search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.email {
+  padding: 10px 10px;
+  outline: none;
+  border: 1px solid #2c2c2c;
+  font-size: 16px;
+  color: #000;
+  min-width: 400px;
+  height: 60px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.submit {
+  outline: none;
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  padding: 0px 30px;
+  border: none;
+  font-size: 1.625rem;
+  color: #fff;
+  background: #e01414;
+  border-radius: 2px;
+  height: 60px;
+  line-height: 60px;
+  min-width: 230px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #ff0000;
+}
+
+/*?------------------------Card-2 ---------------------------*/
+
+.netflix-story-cards,
+.netflix-story-cards-footer,
+.netflix-story-cards-mobildowload,
+.netflix-story-cards-apple,
+.netflix-story-cards-forKids {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: #000;
+  align-items: center;
+  padding: 2rem 4rem;
+  border-top: 8px solid #222;
+}
+
+.netflix-story-card-text {
+  flex-basis: 40%;
+}
+
+.netflix-story-card-text .netflix-story-card-title {
+  font-size: 3.125rem;
+  line-height: 1.1;
+  margin-bottom: 0.5%;
+  letter-spacing: 2px;
+  padding: 0px 50px;
+  padding-bottom: 30px;
+}
+
+.netflix-story-card-text .netflix-story-card-subtitle {
+  font-size: 1.525rem;
+  font-weight: 400;
+  width: 85%;
+  padding: 0px 50px;
+}
+
+/*!------------------Right Column---------------*/
+.netflix-story-card-img-container {
+  flex-basis: 45%;
+}
+
+.netflix-story-card-animation-container {
+  position: relative;
+  height: 100%;
+  width: 75%;
+}
+
+.netflix-story-card-animation {
+  width: 100%;
+  height: 100%;
+  max-width: 73%;
+  min-width: 50%;
+  max-height: 54%;
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  transform: translate(-50%, -50%);
+}
+
+.netflix-story-card-img {
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  z-index: 100;
+}
+
+.video-1 {
+  width: 100%;
+  height: 100%;
+}
+
+/*?------------------------Card-3 ---------------------------*/
+
+.box {
+  border: 2px solid rgb(255, 255, 255, 0.25);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  width: 60%;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #000;
+  margin-top: -20%;
+  overflow: hidden;
+  position: relative;
+}
+
+.box img {
+  width: 15%;
+}
+
+.box p {
+  font-size: 13px;
+}
+
+.box p a {
+  text-decoration: none;
+  color: #0071eb;
+}
+
+.netflix-story-card-animation-container .mobilimage {
+  width: 100%;
+}
+
+/*?------------------------Card-4 ---------------------------*/
+
+.video-2 {
+  width: 61%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*?------------------------Card-5 ---------------------------*/
+
+.netflix-story-quetion-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 8px solid #222;
+  padding: 50px 70px;
+}
+
+.quetion-title {
+  font-size: 2.525rem;
+  line-height: 1.1;
+  margin-bottom: 3rem;
+}
+
+.quetions-block {
+  max-width: 815px;
+  width: 100%;
+  text-align: center;
+}
+
+.quetions-block .quetions-block-item {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 0;
+  padding: 20px 30px;
+  margin-bottom: 1rem;
+  background: #303030;
+}
+
+.quetions-block .quetions-block-item span {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+.quetions-block .quetions-block-item i {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+
+.email-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 1.5%;
+}
+
+.email-container span {
+  padding-bottom: 30px;
+}
+
+.email-container .form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 5%;
+}
+
+.email-container .form > #email {
+  padding: 10px 10px;
+  outline: none;
+  border: 1px solid #2c2c2c;
+  font-size: 16px;
+  color: #000;
+  min-width: 400px;
+  height: 60px;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.email-container .form > #submit {
+  text-transform: uppercase;
+  letter-spacing: 0.1px;
+  outline: none;
+  padding: 0px 30px;
+  border: none;
+  border-radius: 2px;
+  background: #e01414;
+  color: #fff;
+  line-height: 60px;
+  min-width: 230px;
+  font-size: 1.625rem;
+  font-weight: 400;
+  height: 60px;
+  cursor: pointer;
+}
+
+/*?----------------------Footer------------------------*/
+
+.footer {
+  position: relative;
+  padding: 2% 25%;
+}
+
+.footer-wrapper {
+  color: #737373;
+  font-size: 1em;
+  text-align: start;
+  padding-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.footer-top {
+  margin: 0px 0px 30px;
+}
+
+.footer-top .footer-top-a {
+  text-decoration: none;
+  color: #737373;
+}
+
+.footer-top .footer-top-a:hover {
+  border-bottom: 1px solid #737373;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 13px;
+  max-width: 1000px;
+}
+
+.footer-link-item {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-bottom: 16px;
+  min-width: 100px;
+  padding: 0 12px 0 0;
+  vertical-align: top;
+  width: 25%;
+  list-style: none;
+  margin-left: 0;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #737373;
+}
+
+.footer-link:hover {
+  border-bottom: 1px solid #737373;
+}

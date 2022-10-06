@@ -1,0 +1,36 @@
+[
+  {
+    "id": "1",
+    "tel": "+905468705614",
+    "email": "vadimkiniabaev@gmail.com",
+    "password": "12345"
+  },
+
+  {
+    "id": "2",
+    "tel": "+905468705611",
+    "email": "batu@gmail.com",
+    "password": "123456"
+  },
+
+  {
+    "id": "3",
+    "tel": "+905468705612",
+    "email": "veli@gmail.com",
+    "password": "1234567"
+  },
+
+  {
+    "id": "4",
+    "tel": "+905468705613",
+    "email": "samir@gmail.com",
+    "password": "12345678"
+  },
+
+  {
+    "id": "5",
+    "tel": "+905468705615",
+    "email": "ali@gmail.com",
+    "password": "123456789"
+  }
+]

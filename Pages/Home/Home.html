@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix Home</title>
+    <!--------------Css Link------------------>
+    <link rel="stylesheet" href="./Home.css" />
+    <!--------------Favicon Link------------------>
+    <link rel="shortcut icon" href="/Image/fav.png" type="image/x-icon" />
+    <!-------------------Font Awesome Link------------------->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+  </head>
+  <body id="body">
+    <!--------------- Netflix Navbar------------------->
+    <nav class="navbar">
+      <div class="left">
+        <img class="logo" src="/Image/logo.png" alt="logo" />
+        <a class="navbar-link" href="#">Ana sayfa</a>
+        <a class="navbar-link" href="#">Diziler</a>
+        <a class="navbar-link" href="#">Filmler</a>
+        <a class="navbar-link" href="#">Listem</a>
+        <a class="navbar-link" href="#">Dile Göre Göz At</a>
+      </div>
+
+      <div class="right">
+        <div class="search-box">
+          <button class="btn-search"><i class="fas fa-search"></i></button>
+          <input type="text" class="input-search" placeholder="Film Adı..." />
+        </div>
+        <i class="fa fa-bell"></i>
+
+        <img class="user" src="/Image/user.jpg" alt="user-logo" />
+      </div>
+    </nav>
+
+    <!--------------- Netflix Banner------------------->
+
+    <header class="banner">
+      <div class="banner-container">
+        <div class="banner-contenst">
+          <h1 class="banner-title"></h1>
+          <div class="banner_buttons">
+            <button class="play_button">
+              <i class="fa-solid fa-play"></i>
+              Oynat
+            </button>
+            <button class="info_button">
+              <i class="fa-solid fa-circle-info"></i>
+              Daha Fazla Bilgi
+            </button>
+          </div>
+          <div class="banner_description"></div>
+        </div>
+      </div>
+      <div class="banner-fadeBottom"></div>
+    </header>
+
+    <!--------------- Netflix Movies Row------------------->
+
+    <section class="headrow-container"></section>
+
+    <script src="./Home.js"></script>
+  </body>
+</html>

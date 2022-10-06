@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.wrapper {
+  background-image: url(/Image/card1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.wrapper::before {
+  content: "";
+  background-color: rgb(0, 0, 0, 0.65);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+/*?------------------Header------------------*/
+.header {
+  position: relative;
+  padding: 20px 50px;
+  z-index: 10;
+}
+
+.netflix-logo {
+  margin-left: 2%;
+}
+
+.netflix-logo img {
+  height: 55px;
+  cursor: pointer;
+  width: 157px;
+}
+
+/*?------------------Login Body------------------*/
+
+.login-body {
+  position: relative;
+  margin: 0 auto;
+  padding: 60px;
+  z-index: 90;
+  min-height: 515px;
+  width: 415px;
+  background-color: rgb(0, 0, 0, 0.75);
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: aliceblue;
+}
+
+.login-body h1 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 28px;
+}
+
+.inputs-wrapp input {
+  height: 48px;
+  width: 100%;
+  padding-left: 20px;
+  background: #333;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.inputs-wrapp button {
+  height: 48px;
+  width: 100%;
+  background: #e01414;
+  border: none;
+  outline: none;
+  color: aliceblue;
+  font-size: 1rem;
+  font-weight: 400;
+  border-radius: 3px;
+  margin: 20px 0px 15px 0px;
+  cursor: pointer;
+}
+
+.support {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-size: 13px;
+  font-weight: 500;
+  color: #b3b3b3;
+  margin-bottom: 50px;
+}
+
+.remember span {
+  padding-right: 5px;
+}
+
+.support .yardim a {
+  cursor: pointer;
+  color: #b3b3b3;
+  text-decoration: none;
+}
+
+.support .yardim a:hover {
+  border-bottom: 0.1px solid #b3b3b3;
+  color: #b3b3b3;
+}
+
+.login-body-other {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.login-body-other .login-signup-now {
+  color: #b3b3b3;
+}
+
+.login-body-other .login-signup-now a {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.login-body-other .login-signup-now a:hover {
+  border-bottom: 0.1px solid #fff;
+}
+
+.recaptcha {
+  color: #b3b3b3;
+  font-size: 11px;
+  font-weight: 400;
+  padding: 30px 0px;
+}
+
+.recaptcha button {
+  background-color: transparent;
+  border: none;
+  color: #0071eb;
+  cursor: pointer;
+  display: inline;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+}
+
+.recaptcha button:hover {
+  border-bottom: 0.5px solid #0071eb;
+}
+
+/*?------------------Footer------------------*/
+
+.footer {
+  min-width: 190px;
+  width: 100%;
+  color: #fff;
+  background-color: rgb(0, 0, 0, 0.65);
+  margin-top: 80px;
+  font-size: 1rem;
+  position: relative;
+}
+
+.footer-wrapper {
+  color: #737373;
+  font-size: 1em;
+  text-align: start;
+  padding-bottom: 30px;
+  position: relative;
+  width: 100%;
+  padding: 2% 25%;
+}
+
+.footer-top {
+  margin: 0px 0px 30px;
+}
+
+.footer-top .footer-top-a {
+  text-decoration: none;
+  color: #737373;
+  padding: 0px 5px;
+  cursor: pointer;
+}
+
+.footer-top .footer-top-a:hover {
+  border-bottom: 1px solid #737373;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 13px;
+  max-width: 1000px;
+}
+
+.footer-link-item {
+  box-sizing: border-box;
+  display: inline-block;
+  margin-bottom: 16px;
+  min-width: 100px;
+  padding: 0 12px 0 0;
+  vertical-align: top;
+  width: 25%;
+  list-style: none;
+  margin-left: 0;
+  cursor: pointer;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #737373;
+}
+
+.footer-link:hover {
+  border-bottom: 1px solid #737373;
+}
